@@ -7,7 +7,6 @@ dotenv.config();
 
 export default defineConfig({
 	title: "Haru's Blog",
-	base: "/",
 	description: "A VitePress Site",
 	lang: "ja-JP",
 	head: [
@@ -49,7 +48,7 @@ export default defineConfig({
 			lazyLoading: true,
 		},
 	},
-	// buildEnd: feed,
+	buildEnd: feed,
 	themeConfig: {
 		nav: [
 			{ text: "ホーム", link: "/" },
@@ -118,16 +117,16 @@ export default defineConfig({
 			},
 		],
 	},
-	// sitemap: {
-	// 	hostname: "/",
-	// 	lastmodDateOnly: true,
-	// 	transformItems: (items) => {
-	// 		return items.map((item) => {
-	// 			if (item.url.includes("/posts/")) {
-	// 				return { ...item, changefreq: "weekly", priority: 0.8 };
-	// 			}
-	// 			return item;
-	// 		});
-	// 	},
-	// },
+	sitemap: {
+		hostname: "https://vitepress-haru-blog.vercel.app/",
+		lastmodDateOnly: true,
+		transformItems: (items) => {
+			return items.map((item) => {
+				if (item.url.includes("/posts/")) {
+					return { ...item, changefreq: "weekly", priority: 0.8 };
+				}
+				return item;
+			});
+		},
+	},
 });

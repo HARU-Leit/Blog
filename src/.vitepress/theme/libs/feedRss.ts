@@ -9,7 +9,7 @@ import {
 
 const id: string = "Haru";
 // TODO: 自分のドメインに変更する
-const baseUrl: string = "https://";
+const baseUrl: string = "https://vitepress-haru-blog.vercel.app";
 type RssGenerator = (config: SiteConfig) => Promise<void>;
 export const feed: RssGenerator = async (config) => {
 	const feed: Feed = new Feed({
@@ -40,14 +40,13 @@ export const feed: RssGenerator = async (config) => {
 			title: frontmatter.title,
 			id: `${baseUrl}${url.replace(/\/\d+\./, "/")}`,
 			link: `${baseUrl}${url.replace(/\/\d+\./, "/")}`,
-			date: frontmatter.date,
+			date: new Date(frontmatter.date),
 			content: html ?? "",
 			author: [
 				{
 					name: `${id}`,
 					email: "haru.leit@gmail.com",
-					// TODO: 自分のGitHubのリンクに変更する
-					link: "https://github.com/",
+					link: "https://github.com/HARU-Leit/Blog",
 				},
 			],
 		});
