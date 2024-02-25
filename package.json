@@ -1,0 +1,39 @@
+{
+	"name": "blog",
+	"version": "0.0.1",
+	"type": "module",
+	"private": true,
+	"packageManager": "pnpm@8.0.0",
+	"description": "A VitePress blog",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HARU-Leit/blog"
+	},
+	"bugs": {
+		"url": "https://github.com/HARU-Leit/blog/issues"
+	},
+	"license": "MIT",
+	"author": "Haru <haru.leit@gmail.com>",
+	"scripts": {
+		"dev": "vitepress dev src",
+		"build": "vitepress build src",
+		"preview": "vitepress preview src",
+		"lint": "biome lint src",
+		"format": "biome format src",
+		"check": "biome check --apply src"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"feed": "^4.2.2",
+		"lucide-vue-next": "^0.335.0",
+		"vitepress-plugin-comment-with-giscus": "^1.1.12",
+		"vue": "^3.4.19"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.5.3",
+		"@types/node": "^20.11.19",
+		"medium-zoom": "^1.1.0",
+		"sass": "^1.71.0",
+		"vitepress": "1.0.0-rc.44"
+	}
+}

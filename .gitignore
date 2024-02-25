@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+dist
+.temp
+cache
+
+# editor files
+.vscode

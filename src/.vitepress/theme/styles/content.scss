@@ -1,0 +1,69 @@
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc img,
+.vp-doc figure,
+.vp-doc figcaption,
+.vp-doc .footnotes-sep,
+.vp-doc .footnotes p {
+  margin: 0 0 24px;
+}
+
+.vp-doc h2 {
+  margin-top: 44px;
+  border-top: 1px solid var(--vp-c-divider-light);
+  padding-top: 32px;
+}
+
+.vp-doc [class*='language-'] pre,
+.vp-doc [class*='language-'] code,
+.vp-doc td,
+.vp-doc th,
+.vp-doc summary {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.vp-doc th.no-break,
+.vp-doc td.no-break {
+  white-space: nowrap;
+}
+
+.vp-doc figure,
+.vp-doc figcaption {
+  margin: 1.5rem 0;
+}
+
+.vp-doc figcaption {
+  padding: 0.75rem 1.25rem;
+  font-size: 87%;
+  border-radius: 8px;
+  background-color: var(--vp-c-bg-soft);
+}
+
+@media (min-width: 600px) {
+  .vp-doc .float-left,
+  .vp-doc .float-right {
+    max-width: 50%;
+    margin: 1rem 1.5rem 1.5rem 0;
+  }
+  .vp-doc .float-right {
+    margin: 1rem 0 1.5rem 1.5rem;
+  }
+}
+
+.vp-doc var {
+  font-family: var(--vp-font-family-mono);
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+.vp-doc var small {
+  padding-inline: 0.4ch;
+  font-weight: normal;
+  font-size: 90%;
+  color: var(--vp-c-text-2);
+}
+
+.content-container .VPDocFooter {
+  margin-top: 30px;
+}
