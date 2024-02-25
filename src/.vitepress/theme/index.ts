@@ -21,13 +21,14 @@ export default {
 		// TODO: 自分のリポジトリの情報を入れる
 		giscusTalk(
 			{
-				repo: "https//github.com/your/repository",
-				repoId: "your repository id",
+				repo: "https://github.com/HARU-Leit/Blog",
+				repoId: "R_kgDOLXmZpg",
 				category: "Announcements",
-				categoryId: "your category id",
+				categoryId: "DIC_kwDOLXmZps4Cdfxz",
 				mapping: "pathname",
 				inputPosition: "bottom",
 				lang: "ja-JP",
+				loading: "lazy",
 			},
 			{
 				frontmatter,
