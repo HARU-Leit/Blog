@@ -3,57 +3,22 @@ title: "test"
 date: 2024-2-22
 ---
 
-# Runtime API Examples
+# テストブログ
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+このブログはテスト目的で作成されました。Markdownを使用して、様々な書式を簡単に追加できます。
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md`
-and `.vue` files:
+## Markdownの使用例
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+Markdownを使用すると、以下のような書式を簡単に追加できます。
 
-const { theme, page, frontmatter } = useData()
-</script>
+- **太字** : `**太字**`
+- *斜体* : `*斜体*`
+- [リンク](http://example.com) : `[リンク](http://example.com)`
+- 画像: `![代替テキスト](画像URL)`
+- 箇条書き
+  - 箇条書きの項目
+  - 別の箇条書きの項目
 
-## Results
+### コードの挿入例
 
-### Theme Data
-
-<pre>{{ theme }}</pre>
-
-### Page Data
-
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-
-<pre>{{ theme }}</pre>
-
-### Page Data
-
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
-
-![ペンギン](/space_uchu_penguin.png)
+Markdownでは、コードを以下のように挿入できます。
