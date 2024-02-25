@@ -21,3 +21,7 @@ Markdownでは、以下のような書式を簡単に記述できます。
 ### コードの挿入
 
 Markdownでは、コードを以下のように挿入できます。
+
+```ts
+  console.log('Hello, World!');
+```
