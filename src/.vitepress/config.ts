@@ -1,9 +1,6 @@
-import dotenv from "dotenv";
 import { defineConfig } from "vitepress";
 import { feed } from "./theme/libs/feedRss";
 import { CustomSidebar } from "./theme/libs/customNavbar";
-
-dotenv.config();
 
 export default defineConfig({
 	title: "Haru's Blog",

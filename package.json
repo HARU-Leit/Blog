@@ -23,7 +23,6 @@
 		"check": "biome check --apply src"
 	},
 	"dependencies": {
-		"dotenv": "^16.4.5",
 		"feed": "^4.2.2",
 		"lucide-vue-next": "^0.335.0",
 		"vitepress-plugin-comment-with-giscus": "^1.1.12",
