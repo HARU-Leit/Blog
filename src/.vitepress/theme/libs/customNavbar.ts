@@ -1,16 +1,7 @@
 export const CustomSidebar = () => {
 	return {
 		// アーカイブページ用のサイドバー
-		"/archives/": [
-			{
-				text: "アーカイブ",
-				items: [
-					{ text: "2023年", link: "/archives/2023/" },
-					{ text: "2022年", link: "/archives/2022/" },
-					// 他の年...
-				],
-			},
-		],
+		"/archives/": [],
 		// タグページ用のサイドバー
 		"/tags/": [
 			{

@@ -18,7 +18,7 @@ export const mediumZoomSymbol: InjectionKey<Zoom> = Symbol("medium-zoom");
 export const createMediumZoomProvider = (app: App, router: Router) => {
 	if (import.meta.env.SSR) return;
 
-	const zoom = mediumZoom({ background: "#fff" });
+	const zoom = mediumZoom();
 	zoom.refresh = (selector = defaultSelector) => {
 		zoom.detach();
 		zoom.attach(selector);

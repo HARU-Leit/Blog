@@ -8,7 +8,6 @@ import {
 } from "vitepress";
 
 const id: string = "Haru";
-// TODO: 自分のドメインに変更する
 const baseUrl: string = "https://vitepress-haru-blog.vercel.app";
 type RssGenerator = (config: SiteConfig) => Promise<void>;
 export const feed: RssGenerator = async (config) => {

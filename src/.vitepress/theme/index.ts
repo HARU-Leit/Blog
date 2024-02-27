@@ -6,7 +6,9 @@ import DefaultTheme from "vitepress/theme";
 import { h } from "vue";
 import { createMediumZoomProvider } from "./libs/useMediumZoom";
 
-import Posts from "./components/Posts.vue";
+// component import
+import Home from "./components/home.vue";
+import Archives from "./components/archives.vue";
 import DocHeader from "./layouts/DocHeader.vue";
 
 // css import
@@ -17,8 +19,6 @@ export default {
 	setup() {
 		const { frontmatter } = useData();
 		const route = useRoute();
-
-		// TODO: 自分のリポジトリの情報を入れる
 		giscusTalk(
 			{
 				repo: "HARU-Leit/Blog",
@@ -38,7 +38,8 @@ export default {
 	},
 	enhanceApp({ app, router }: EnhanceAppContext) {
 		createMediumZoomProvider(app, router);
-		app.component("Posts", Posts);
+		app.component("Home", Home);
+		app.component("Archives", Archives);
 	},
 	Layout() {
 		return h(DefaultTheme.Layout, null, {

@@ -1,5 +1,7 @@
 ---
-date: 2024-2-23
+title: "テスト投稿"
+date: 2024-02-23
+tags: "test, testing"
 ---
 
 # テスト投稿

@@ -69,6 +69,11 @@ h1 {
 
   @media (min-width: 768px) {
     margin: 0 auto;
+    max-width: 768px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 auto;
     max-width: 1024px;
   }
 }
