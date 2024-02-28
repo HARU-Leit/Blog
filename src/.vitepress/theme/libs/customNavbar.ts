@@ -12,8 +12,25 @@ export const CustomSidebar = () => {
 				],
 			},
 		],
-		"/profile/": [],
-		// 他のパスに対するデフォルトのサイドバー
+		"/profile/": [
+			{
+				text: "お問い合わせ",
+				items: [
+					{ text: "Twitter", link: "https://twitter.com/HARU_Leit" },
+					{ text: "GitHub", link: "https://github.com/HARU-Leit" },
+					{ text: "GMail", link: "mailto:haru.leit@gmail.com" },
+				],
+			},
+			{
+				text: "支援 / Donate",
+				items: [
+					{
+						text: "By Me A Coffee",
+						link: "https://www.buymeacoffee.com/haru0609",
+					},
+				],
+			},
+		],
 		"/": [
 			{
 				text: "関連タグ",

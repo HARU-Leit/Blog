@@ -17,7 +17,7 @@ export default defineConfig({
 			"link",
 			{
 				rel: "stylesheet",
-				href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+JP:wght@100..900&display=swap",
+				href: "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap",
 			},
 		],
 		[
@@ -56,7 +56,10 @@ export default defineConfig({
 		sidebar: {
 			...CustomSidebar(),
 		},
-		logo: "/favicon.ico",
+		logo: {
+			src: "/favicon.ico",
+			alt: "Logo",
+		},
 		darkModeSwitchLabel: "外観",
 		returnToTopLabel: "トップへ戻る",
 		outline: {

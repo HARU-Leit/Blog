@@ -1,17 +1,16 @@
-// types import
+import { h } from "vue";
 import type { EnhanceAppContext, Theme } from "vitepress";
 import { useData, useRoute } from "vitepress";
-import giscusTalk from "vitepress-plugin-comment-with-giscus";
 import DefaultTheme from "vitepress/theme";
-import { h } from "vue";
+import giscusTalk from "vitepress-plugin-comment-with-giscus";
+
 import { createMediumZoomProvider } from "./libs/useMediumZoom";
 
-// component import
 import Home from "./components/home.vue";
 import Archives from "./components/archives.vue";
 import DocHeader from "./layouts/DocHeader.vue";
+import Tags from "./components/tags.vue";
 
-// css import
 import "./styles/index.scss";
 
 export default {
@@ -40,6 +39,7 @@ export default {
 		createMediumZoomProvider(app, router);
 		app.component("Home", Home);
 		app.component("Archives", Archives);
+		app.component("Tags", Tags);
 	},
 	Layout() {
 		return h(DefaultTheme.Layout, null, {

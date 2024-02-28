@@ -6,8 +6,8 @@
 .medium-zoom-overlay {
   z-index: var(--medium-zoom-z-index);
   background-color: var(--medium-zoom-c-bg) !important;
-}
 
-.medium-zoom-overlay ~ img {
-  z-index: calc(var(--medium-zoom-z-index) + 1);
+  & ~ img {
+    z-index: calc(var(--medium-zoom-z-index) + 1);
+  }
 }

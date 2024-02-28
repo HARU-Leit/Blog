@@ -4,6 +4,8 @@ interface Post {
 	title: string;
 	url: string;
 	date: string;
+	description: string;
+	tags: string;
 }
 
 type Dictionary = Record<string, Post[]>;
@@ -22,6 +24,8 @@ const transformRawPosts = (rawPosts: ContentData[]): Dictionary => {
 				title: frontmatter.title,
 				url: formatURL(url),
 				date,
+				description: frontmatter.description,
+				tags: frontmatter.tags,
 			};
 			if (!acc[year]) {
 				acc[year] = [post];

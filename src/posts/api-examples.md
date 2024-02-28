@@ -1,9 +1,9 @@
 ---
-title: "test"
+title: "API Examples"
+description: "API Examples"
+tags: "test, testing"
 date: 2024-02-19
 ---
-
-# テストブログ
 
 このブログはテスト目的で作成されました。Markdownを使用して、様々な書式を簡単に追加できます。
 
