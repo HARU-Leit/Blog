@@ -1,5 +1,7 @@
 # Haru's Blog
 
+[日本語のREADMEはこちら](README-ja.md)
+
 > note:
 > This blog is currently under construction. Some features are not yet implemented.
 > Also, articles are only available in Japanese. Please understand.
