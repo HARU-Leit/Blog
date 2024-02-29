@@ -47,16 +47,11 @@ const router = useRouter()
 
 <style scoped lang="scss">
 .main {
-  margin: 0 1rem;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     margin: 0 auto;
     max-width: 768px;
-  }
-
-  @media (min-width: 1024px) {
-    margin: 1rem auto;
-    max-width: 1024px;
   }
 }
 

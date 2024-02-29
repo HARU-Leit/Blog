@@ -7,6 +7,7 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus'
 import { createMediumZoomProvider } from './libs/useMediumZoom'
 
 import Home from './components/home.vue'
+import Posts from './components/posts.vue'
 import Archives from './components/archives.vue'
 import DocHeader from './layouts/DocHeader.vue'
 import Tags from './components/tags.vue'
@@ -38,6 +39,7 @@ export default {
   enhanceApp({ app, router }: EnhanceAppContext) {
     createMediumZoomProvider(app, router)
     app.component('Home', Home)
+    app.component('Posts', Posts)
     app.component('Archives', Archives)
     app.component('Tags', Tags)
   },
