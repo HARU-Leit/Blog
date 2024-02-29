@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-
 import { data } from '../libs/posts.data'
 
 const formatDate = (raw: string): string => {
@@ -16,11 +15,13 @@ const formatDate = (raw: string): string => {
     <h1>投稿一覧</h1>
     <section v-for="year in Object.keys(data).reverse()" :key="year">
       <h2 class="postYear">{{ year }}</h2>
-      <ul style="list-style-type: none;">
+      <ul style="list-style-type: none">
         <li v-for="post in data[year]" :key="post.url">
           <article class="post">
             <a :href="post.url" class="postLink">{{ post.title }}</a>
-            <time :datetime="post.date" class="postDate">{{ formatDate(post.date) }}</time>
+            <time :datetime="post.date" class="postDate">{{
+              formatDate(post.date)
+            }}</time>
           </article>
         </li>
       </ul>

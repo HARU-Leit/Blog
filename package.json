@@ -1,38 +1,50 @@
 {
-	"name": "blog",
-	"version": "0.0.3",
-	"type": "module",
-	"private": true,
-	"packageManager": "pnpm@8.0.0",
-	"description": "A VitePress blog",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/HARU-Leit/blog"
-	},
-	"bugs": {
-		"url": "https://github.com/HARU-Leit/blog/issues"
-	},
-	"license": "MIT",
-	"author": "Haru <haru.leit@gmail.com>",
-	"scripts": {
-		"dev": "vitepress dev src",
-		"build": "vitepress build src",
-		"preview": "vitepress preview src",
-		"lint": "biome lint src",
-		"format": "biome format src",
-		"check": "biome check --apply src"
-	},
-	"dependencies": {
-		"feed": "^4.2.2",
-		"lucide-vue-next": "^0.335.0",
-		"vitepress-plugin-comment-with-giscus": "^1.1.12",
-		"vue": "^3.4.19"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.5.3",
-		"@types/node": "^20.11.21",
-		"medium-zoom": "^1.1.0",
-		"sass": "^1.71.0",
-		"vitepress": "1.0.0-rc.44"
-	}
+  "name": "blog",
+  "version": "0.0.3",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@8.0.0",
+  "description": "A VitePress blog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HARU-Leit/blog"
+  },
+  "bugs": {
+    "url": "https://github.com/HARU-Leit/blog/issues"
+  },
+  "license": "MIT",
+  "author": "Haru <haru.leit@gmail.com>",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src",
+    "lint": "oxlint src",
+    "lint:fix": "oxlint src --fix",
+    "format": "prettier --write src",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "feed": "^4.2.2",
+    "lucide-vue-next": "^0.343.0",
+    "vitepress-plugin-comment-with-giscus": "^1.1.12",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "medium-zoom": "^1.1.0",
+    "oxlint": "^0.2.12",
+    "prettier": "^3.2.5",
+    "sass": "^1.71.1",
+    "vitepress": "1.0.0-rc.44"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "oxlint --fix"
+    ],
+    "*.{md,scss,ts,vue}": [
+      "prettier --write"
+    ]
+  }
 }

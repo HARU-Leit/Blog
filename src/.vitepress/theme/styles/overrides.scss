@@ -87,7 +87,10 @@
       font-size: 13px;
       margin: 0 4px;
       opacity: 0.7;
-      transition: color 0.1s, opacity 0.1s, box-shadow 0.1s;
+      transition:
+        color 0.1s,
+        opacity 0.1s,
+        box-shadow 0.1s;
       &:hover:not(.active) {
         opacity: 1;
         color: var(--vp-c-text-1);
@@ -282,7 +285,9 @@
       display: inline-block;
       text-underline-offset: 2px;
       text-decoration-thickness: 1px;
-      transition: color 0.1s ease, text-underline-offset 0.1s ease;
+      transition:
+        color 0.1s ease,
+        text-underline-offset 0.1s ease;
     }
   }
 
@@ -342,7 +347,9 @@
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
-    transition: color 0.1s ease, text-underline-offset 0.1s ease;
+    transition:
+      color 0.1s ease,
+      text-underline-offset 0.1s ease;
 
     :root.dark & {
       color: rgb(131, 222, 255);
@@ -391,7 +398,10 @@
   &.link {
     margin: 0;
     padding: 9px var(--active-indicator-padding) !important;
-    transition: background-color 0.1s, box-shadow 0.1s, color 0.1s;
+    transition:
+      background-color 0.1s,
+      box-shadow 0.1s,
+      color 0.1s;
   }
 }
 
@@ -399,7 +409,9 @@
   padding: 0;
   font-size: 13px !important;
   line-height: 1.32 !important;
-  transition: color 0.1s, opacity 0.1s;
+  transition:
+    color 0.1s,
+    opacity 0.1s;
 }
 
 .VPLink:hover .text {

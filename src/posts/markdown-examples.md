@@ -1,7 +1,7 @@
 ---
-title: "テスト投稿"
+title: 'テスト投稿'
 date: 2024-02-23
-tags: "test, testing"
+tags: 'test, testing'
 ---
 
 # テスト投稿
@@ -13,7 +13,7 @@ tags: "test, testing"
 Markdownでは、以下のような書式を簡単に記述できます。
 
 - **太字** : `**太字**`
-- *斜体* : `*斜体*`
+- _斜体_ : `*斜体*`
 - [リンク](http://example.com) : `[リンク](http://example.com)`
 - 画像: `![代替テキスト](画像URL)`
 - 箇条書き
@@ -25,5 +25,5 @@ Markdownでは、以下のような書式を簡単に記述できます。
 Markdownでは、コードを以下のように挿入できます。
 
 ```ts
-  console.log('Hello, World!');
+console.log('Hello, World!')
 ```

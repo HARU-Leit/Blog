@@ -1,5 +1,5 @@
 <script setup>
-import { Tags, PencilLine } from 'lucide-vue-next';
+import { Tags, PencilLine } from 'lucide-vue-next'
 import { tagsToArray, formatDate } from '../libs/utils'
 import { useData } from 'vitepress'
 
@@ -12,12 +12,17 @@ const { frontmatter } = useData()
     <p class="description">{{ frontmatter.description }}</p>
     <div class="date-tags-container">
       <span v-if="frontmatter.date && !frontmatter.noStyle" class="date">
-        <PencilLine :size="20" :stroke-width="1.5" class="icon" />{{ formatDate(frontmatter.date) }}
+        <PencilLine :size="20" :stroke-width="1.5" class="icon" />{{
+          formatDate(frontmatter.date)
+        }}
       </span>
       <span v-if="frontmatter.tags" class="tags">
         <Tags :size="20" :stroke-width="1.5" class="icon" />
         <template v-for="(tag, index) in tagsToArray(frontmatter.tags)">
-          <a :href="`/tags/${tag}`">{{ tag }}</a><span v-if="index < tagsToArray(frontmatter.tags).length - 1">・</span>
+          <a :href="`/tags/${tag}`">{{ tag }}</a
+          ><span v-if="index < tagsToArray(frontmatter.tags).length - 1"
+            >・</span
+          >
         </template>
       </span>
     </div>
@@ -65,7 +70,7 @@ header {
   display: flex;
   align-items: center;
 
-  .date+.tags {
+  .date + .tags {
     margin-left: 16px;
   }
 }

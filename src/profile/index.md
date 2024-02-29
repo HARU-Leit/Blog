@@ -1,6 +1,6 @@
 ---
-title: "Haruのプロフィール"
-description: "Haruのプロフィールです。"
+title: 'Haruのプロフィール'
+description: 'Haruのプロフィールです。'
 nonHeader: true
 ---
 
@@ -16,10 +16,9 @@ if (!isBirthdayPassed) {
 
 # Haru
 
-  ``` ts
+```ts
 // 人生の目標
-const goal = '最大限の努力をして、楽しむこと';
-
+const goal = '最大限の努力をして、楽しむこと'
 ```
 
 #### プロフィール

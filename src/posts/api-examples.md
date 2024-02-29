@@ -1,7 +1,7 @@
 ---
-title: "API Examples"
-description: "API Examples"
-tags: "test, testing"
+title: 'API Examples'
+description: 'API Examples'
+tags: 'test, testing'
 date: 2024-02-19
 ---
 
@@ -12,7 +12,7 @@ date: 2024-02-19
 Markdownを使用すると、以下のような書式を簡単に追加できます。
 
 - **太字** : `**太字**`
-- *斜体* : `*斜体*`
+- _斜体_ : `*斜体*`
 - [リンク](http://example.com) : `[リンク](http://example.com)`
 - 画像: `![代替テキスト](画像URL)`
 - 箇条書き
