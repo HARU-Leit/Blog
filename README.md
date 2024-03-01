@@ -1,5 +1,7 @@
 # Haru's Blog
 
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FHARU-Leit%2FBlog&countColor=%23263759&style=flat&labelStyle=none)
+
 [日本語のREADMEはこちら](README-ja.md)
 
 > note:
